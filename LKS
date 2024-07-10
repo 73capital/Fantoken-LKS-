@@ -1,0 +1,51 @@
+# LKS Fan Token Documentation
+
+## Token Details
+
+- **Blockchain:** EVM (Whitechain or Ethereum)
+- **Standard:** ERC-20
+- **Total Supply:** 20,000,000 LKS Tokens
+
+## Token Allocation
+
+| Description                | Percentage | Number of Tokens |
+| -------------------------- | ---------- | ---------------- |
+| Marketing and Management   | 43%        | 8,600,000        |
+| Lodz Fund                  | 29%        | 5,800,000        |
+| Token Sales                | 14.5%      | 2,900,000        |
+| Charity Fund               | 5%         | 1,000,000        |
+| Seventy-three Fund         | 3%         | 600,000          |
+| Exchange Liquidity         | 2.5%       | 500,000          |
+| Loyalty Subscriptions      | 2%         | 400,000          |
+| Relationship Funds         | 1%         | 200,000          |
+|                            |            |                  |
+| Total                      | 100%       | 20,000,000       |
+
+## Token Sales
+
+| Phase       | Percentage | Number of Tokens | Vesting Details                    |
+| ----------- | ---------- | ---------------- | ----------------------------------- |
+| Pre-Launch  | 7%         | 1,400,000        | Locked for 90 days post-ICO         |
+| ICO Sale    | 7.5%       | 1,500,000        | Locked for 60 days post-ICO         |
+
+## Smart Contract Implementation
+
+### Token Smart Contract
+
+- **Features**:
+  - **Burnable**: Implementation of the `burn()` function to destroy tokens.
+  - **Access Control**: Use of a role pattern to differentiate operational capabilities within the contract.
+  - **Pausable**: Inclusion of a pause mechanism to stop operations in case of emergencies.
+  - **Blacklisting**: Ability to exclude specific addresses from operating with the tokens.
+- **Upgradeability**: Adoption of the UUPS pattern for potential future updates to the contract.
+
+## Revenue Sharing and Buyback System
+
+The buyback system includes:
+
+- **Revenue Sharing**: A percentage of revenues is used to buy tokens from the market and redistribute them.
+- **Buyback and Burn**: Periodically, tokens are bought back and burned to reduce the supply and potentially influence the token price.
+
+### Notes on Buyback
+
+The functions for calculating revenues will not be directly part of the smart contracts but managed by external systems, to ensure flexibility and security in revenue sharing and buyback operations.
